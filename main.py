@@ -15,11 +15,16 @@ while contInput=="y":
                 print("Invalid number")
 
     print(nameList[numStudent])
-    catChosen=input("What category would you like to see? (Hometown or Favorite Food)")
-    if catChosen.lower()=="hometown":
-        print(homeList[numStudent])
-    elif catChosen.lower()=="favorite":
-        print(foodList[numStudent])
-    else:
-        print("Sorry, I didn't understand please try again")
-    contInput=input("Would you like to learn about another student? (y/n")
+    validCat="n"
+    while validCat == "n":
+        catChosen=input("What category would you like to see? (Hometown or Favorite Food)")
+        if catChosen.lower()=="hometown" | catChosen.lower()=="home" | catChosen.lower()=="town":
+            print(homeList[numStudent])
+            validCat="y"
+        elif catChosen.lower()=="favorite food" or catChosen.lower()=="food" or catChosen.lower()=="favorite":
+            print(foodList[numStudent])
+            validCat="y"
+        else:
+            print("Sorry, I didn't understand please try again")
+
+    contInput=input("Would you like to learn about another student? (y/n)")
