@@ -1,0 +1,12 @@
+Create three lists: name, hometown, favorite_food
+prompt user for number of student
+validate number of user
+prompt user for category: Hometown or favorite food
+validate category
+prompt user if they want to repeat
+use length of the list in the code to measure?
+
+if possible:
+display list of all students (possibly with hometown and favorite food?
+Allow search by name
+Uppercase and lowercase allowed?
